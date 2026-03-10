@@ -10,7 +10,7 @@ This repository demonstrates how to redefine Voronoi regions using **routing-bas
 
 ## Interactive Maps
 
-The interactive maps generated in the notebooks can be explored directly online:
+Explore the results directly through the interactive maps:
 
 - **Nearest provincial capital by travel time (Peninsular Spain)**  
   https://carlospb8.github.io/travel-time-voronoi/nearest_province_capital_spain.html
@@ -18,7 +18,7 @@ The interactive maps generated in the notebooks can be explored directly online:
 - **Accessibility to public hospitals in Castilla-La Mancha**  
   https://carlospb8.github.io/travel-time-voronoi/nearest_public_hospital_CLM.html
 
-These maps show how territories are partitioned when accessibility is measured using **actual travel time through the road network**, rather than straight-line distance.
+These maps illustrate how territories are partitioned when accessibility is measured using **actual travel time through the road network**, rather than straight-line distance.
 
 ---
 
@@ -47,7 +47,7 @@ The workflow combines spatial indexing and routing:
 
 Each **municipality** is treated as a point, and **provincial capitals** are treated as centers.
 
-The goal is to determine which capital is **closest in travel time**, not distance.
+The goal is to determine which capital is **closest in travel time**, not geographic distance.
 
 This produces **travel-time Voronoi regions of provincial capitals**.
 
@@ -64,4 +64,14 @@ Travel times are used to evaluate **healthcare accessibility**, including:
 
 ---
 
-## Repository Structure
+## How to Run
+
+Clone the repository: git clone https://github.com/Carlospb8/travel-time-voronoi.git
+
+Open the notebooks in the `notebooks/` folder to reproduce the analysis.
+
+The core routing function is implemented in:
+
+src/routing.py
+
+Specifically, the function `nearest_center_osrm()` assigns each point to the nearest center based on **travel time computed using the OSRM routing engine**.
