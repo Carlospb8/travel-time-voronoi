@@ -8,6 +8,20 @@ This repository demonstrates how to redefine Voronoi regions using **routing-bas
 
 ---
 
+## Interactive Maps
+
+The interactive maps generated in the notebooks can be explored directly online:
+
+- **Nearest provincial capital by travel time (Peninsular Spain)**  
+  https://carlospb8.github.io/travel-time-voronoi/nearest_province_capital_spain.html
+
+- **Accessibility to public hospitals in Castilla-La Mancha**  
+  https://carlospb8.github.io/travel-time-voronoi/nearest_public_hospital_CLM.html
+
+These maps show how territories are partitioned when accessibility is measured using **actual travel time through the road network**, rather than straight-line distance.
+
+---
+
 ## Methodology
 
 The workflow combines spatial indexing and routing:
