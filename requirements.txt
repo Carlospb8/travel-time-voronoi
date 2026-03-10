@@ -1,0 +1,8 @@
+pandas
+numpy
+folium
+matplotlib
+scikit-learn
+requests
+geopy
+geopandas
